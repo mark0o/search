@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <script defer="" src="mdp-src.js"></script>
+</head>
+
+<body>
+    <style>
+        html {
+            overflow: hidden;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .wrap {
+            width: 80%;
+        }
+
+        svg {
+            height: 21px;
+            position: relative;
+            top: 4px;
+        }
+
+        input {
+            font-size: 4em;
+        }
+    </style>
+    <div class="wrap">
+        <input id="text" type="text" mdp-label="Search something..." />
+        <div class="buttons" style="display: flex; justify-content: center; align-items: center; gap: 2em;">
+            <button onclick="ecosia()" id="ecosia" style="display: inline-block; width: 30%">
+                <svg id="eRxV5lGj9Kn1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 16 16" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                    project-id="356bc5a3025f4bcd92ca2b4f5cae8dc1" export-id="5edcf40fddb14eb5b52b778b3f33448e"
+                    cached="false">
+                    <path
+                        d="M17.447507,25.31372v-2.28605c0,0-6.534079.548652-6.58395-3.566238s2.560425-4.11489,2.560425-4.11489-1.234491-5.395078,3.566306-5.989451s4.800797,3.566238,4.800797,3.566238s2.377538.45721,2.69759,1.691677-1.508822,1.78312-1.508822,1.78312s1.938061,1.352726,2.011763,2.514655-2.231331,3.08661-3.200532,3.520517-2.240372,0-2.240372,0q-.045722,0,.594384,2.834702l-2.69759.045721Z"
+                        transform="translate(-9.92808-9.31372)" fill="#fff" stroke-width="0.5" />
+                </svg>
+                Ecosia
+            </button>
+            <button onclick="ai()" id="ai" style="display: inline-block; width: 30%">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 2406 2406">
+
+                    <path id="a"
+                        d="M1107.3 299.1c-197.999 0-373.9 127.3-435.2 315.3L650 743.5v427.9c0 21.4 11 40.4 29.4 51.4l344.5 198.515V833.3h.1v-27.9L1372.7 604c33.715-19.52 70.44-32.857 108.47-39.828L1447.6 450.3C1361 353.5 1237.1 298.5 1107.3 299.1zm0 117.5-.6.6c79.699 0 156.3 27.5 217.6 78.4-2.5 1.2-7.4 4.3-11 6.1L952.8 709.3c-18.4 10.4-29.4 30-29.4 51.4V1248l-155.1-89.4V755.8c-.1-187.099 151.601-338.9 339-339.2z"
+                        fill="#fff" />
+                    <use xlink:href="#a" transform="rotate(60 1203 1203)" />
+                    <use xlink:href="#a" transform="rotate(120 1203 1203)" />
+                    <use xlink:href="#a" transform="rotate(180 1203 1203)" />
+                    <use xlink:href="#a" transform="rotate(240 1203 1203)" />
+                    <use xlink:href="#a" transform="rotate(300 1203 1203)" />
+
+                </svg>
+                AI
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
