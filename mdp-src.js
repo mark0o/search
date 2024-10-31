@@ -1491,12 +1491,12 @@ addLabelsToRadioInputs();
 
 function ecosia() {
   const query = document.getElementById("text").value
-  window.location.href = `https://www.ecosia.org/search?q=${encodeURIComponent(query)}`
+  window.open(`https://www.ecosia.org/search?q=${encodeURIComponent(query)}`, '_blank');
 }
 
 function ai() {
   const query = document.getElementById("text").value
-  window.location.href = `https://www.perplexity.ai/search/new?q=${encodeURIComponent(query)}`
+  window.open(`https://www.perplexity.ai/search/new?q=${encodeURIComponent(query)}`, '_blank');
 }
 
 setMouse()
