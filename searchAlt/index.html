@@ -51,12 +51,22 @@
             background-position: center center;
 
         }
+
+        .ujc {
+            width: 21px;
+            height: 21px;
+            display: inline-block;
+            margin: 0px;
+            position: relative;
+            top: 50%;
+            transform: translateY(10%);
+        }
     </style>
     <div class="wrap">
 
         <input id="text" type="text" mdp-label="Search something..." />
         <div class="buttons" style="display: flex; justify-content: center; align-items: center; gap: 2em;">
-            <button onclick="ecosia()" id="ecosia" style="display: inline-block; width: 30%">
+            <button onclick="ecosia()" id="ecosia" style="display: inline-block; width: 20%">
                 <svg id="eRxV5lGj9Kn1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     viewBox="0 0 16 16" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
                     project-id="356bc5a3025f4bcd92ca2b4f5cae8dc1" export-id="5edcf40fddb14eb5b52b778b3f33448e"
@@ -67,7 +77,7 @@
                 </svg>
                 Ecosia
             </button>
-            <button onclick="ai()" id="ai" style="display: inline-block; width: 30%">
+            <button onclick="ai()" id="ai" style="display: inline-block; width: 20%">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     viewBox="0 0 2406 2406">
 
@@ -83,7 +93,13 @@
                 </svg>
                 AI
             </button>
+            <button onclick="ujc()" id="ujc" style="display: inline-block; width: 20%">
+                <img src="data:image/png;base64,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"
+                    alt="" class="ujc" />
+                Příručka UJC
+            </button>
         </div>
+    </div>
 </body>
 
 </html>
