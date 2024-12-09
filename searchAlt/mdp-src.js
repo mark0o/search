@@ -1499,6 +1499,11 @@ function ai() {
   window.location.href = `https://www.perplexity.ai/search/new?q=${encodeURIComponent(query)}`
 }
 
+function ujc() {
+  const query = document.getElementById("text").value
+  window.location.href = `https://prirucka.ujc.cas.cz/?slovo=${encodeURIComponent(query)}`
+}
+
 setMouse()
 const icons = `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />`
 document.querySelector("head").innerHTML = document.querySelector("head").innerHTML + icons
